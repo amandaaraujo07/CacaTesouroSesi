@@ -17,7 +17,7 @@ export default function TelaInicial() {
       <Image source={require('../../assets/images/logo.png')} style={styles.logo} />
       
       {/* Botões */}
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('jogo')}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('1next')}>
         <Text style={styles.buttonText}>INICIAR JOGO</Text>
       </TouchableOpacity>
 
