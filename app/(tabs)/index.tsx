@@ -2,18 +2,9 @@ import React, { useEffect } from 'react';
 import { StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
-import { useAudio } from '../AudioProvider';
 
 export default function TelaInicial() {
   const navigation = useNavigation();
-  const { play, stop } = useAudio();
-
-  useEffect(() => {
-    play();
-    return () => {
-      stop();
-    };
-  }, []);
 
   return (
     <LinearGradient
