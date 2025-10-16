@@ -29,7 +29,7 @@ export default function Instrucao1() {
 
         <TouchableOpacity
           style={styles.nextButton}
-          onPress={() => navigation.navigate('jogo')}
+          onPress={() => navigation.navigate('checkpoint1')}
         >
           <Text style={styles.nextText}>NEXT</Text>
         </TouchableOpacity>
