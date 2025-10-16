@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     marginBottom: 0, 
     resizeMode: 'contain', // Mantém a proporção da imagem
   },
+
   button: {
     width: 200,
     paddingVertical: 15,
@@ -51,9 +52,10 @@ const styles = StyleSheet.create({
     borderRadius: 40, 
     marginBottom: 20,
     alignItems: 'center',
-    borderWidth: 3,
+    borderWidth: 5,
     borderColor: '#8B4513',
   },
+
   buttonText: {
     color: '#2E5825', 
     fontSize: 20,

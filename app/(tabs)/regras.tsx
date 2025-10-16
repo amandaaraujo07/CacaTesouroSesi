@@ -23,40 +23,42 @@ export default function Regras() {
           <View style={styles.item}>
             <Text style={styles.number}>1.</Text>
             <Text style={styles.text}>
-              Após a leitura das instruções aperte NEXT para iniciar o jogo;
+              Após a leitura das instruções aperte NEXT para iniciar o jogo;            
             </Text>
           </View>
 
           <View style={styles.item}>
             <Text style={styles.number}>2.</Text>
             <Text style={styles.text}>
-              A tela seguinte mostrará o local de início, que é o ponto de partida para o primeiro checkpoint;
+              A tela seguinte mostrará o local de início, com uma determinada distância a ser seguida, que é o ponto de partida para o primeiro checkpoint;
             </Text>
           </View>
 
           <View style={styles.item}>
             <Text style={styles.number}>3.</Text>
             <Text style={styles.text}>
-              O jogador escuta o áudio que apresentará a dica e usa a informação da distância e da bússola para se guiar;
+              O jogador deverá escutar o áudio que apresentará as dicas e usar as informações de distância para se guiar até o local;
             </Text>
           </View>
 
           <View style={styles.item}>
             <Text style={styles.number}>4.</Text>
             <Text style={styles.text}>
-              Ao chegar ao checkpoint, o jogador deverá validá-lo por meio de uma fotografia. Caso a foto esteja correta,
-              o sistema permitirá o avanço para a próxima tela. Caso contrário, a captura e o envio da imagem não serão
-              concluídos, impossibilitando a progressão e indicando que o jogador não se encontra no local correto;
+              Ao chegar ao checkpoint, o jogador irá receber uma mensagem “Você chegou ao seu destino”, após essa validação o usuário poderá apertar no botão “Next” e seguir para a próxima fase;
             </Text>
           </View>
 
           <View style={styles.item}>
             <Text style={styles.number}>5.</Text>
             <Text style={styles.text}>
-              Após a validação bem-sucedida, será exibida uma tela de confirmação. Nessa etapa, o jogador deverá
-              selecionar a opção NEXT para receber a próxima instrução referente ao novo checkpoint e, em seguida,
-              repetir o processo.
+            Após a validação, novas coordenadas serão sugeridas, até o jogador chegar ao destino final;
             </Text>
+          </View>
+
+          <View style={styles.item}>
+            <Text style={styles.number}>5.</Text>
+            <Text style={styles.text}>
+            No último checkpoint, o jogador deverá interpretar a dica e inserir o nome do última pista deseja. Após isso, o usuário receberá um uma tela de validação, confirmando que chegou ao final do jogo;            </Text>
           </View>
 
           {/* Observação */}
@@ -72,28 +74,27 @@ export default function Regras() {
           {/* Lista de elementos */}
           <View style={styles.list}>
             <Text style={styles.listItem}>
-              <Text style={styles.bold}>Áudio:</Text> Em cada etapa, haverá um áudio com a dica para descobrir a
-              localização do próximo Checkpoint. O jogador deve ouvir com atenção;
+              <Text style={styles.bold}>Áudio:</Text> Em cada etapa, haverá um áudio com a dica para descobrir a localização do
+              próximo local. O jogador deve ouvir com atenção;
             </Text>
 
             <Text style={styles.listItem}>
-              <Text style={styles.bold}>Distância:</Text> Será mostrada a distância em metros que o jogador está do
-              Checkpoint atual;
+              <Text style={styles.bold}>Distância:</Text> Distância:
+              Será mostrada a distância em metros que o jogador está do Checkpoint atual;
             </Text>
 
             <Text style={styles.listItem}>
-              <Text style={styles.bold}>Bússola:</Text> A bússola será usada para ajudar o jogador a seguir no caminho
-              certo, indicando a direção a ser seguida – onde a flecha exibida indicará a direção norte;
+              <Text style={styles.bold}>Coordenadas:</Text> A latitude e a longitude será usado para ajudar o jogador a seguir no caminho certo, indicando a direção a ser seguida – melhorando a experiencia do jogador com a temática do jogo;
             </Text>
 
             <Text style={styles.listItem}>
-              <Text style={styles.bold}>Checkpoint:</Text> Ponto físico no mapa real que o jogador precisa encontrar para
-              validar a etapa;
+              <Text style={styles.bold}>Checkpoint:</Text> Ponto físico no mapa real que o jogador precisa encontrar para validar a
+              etapa;
             </Text>
 
             <Text style={styles.listItem}>
-              <Text style={styles.bold}>Foto:</Text> Ao chegar no local que o jogador acredita ser o Checkpoint, ele deve
-              tirar uma foto para validar a resposta.
+              <Text style={styles.bold}>Botão Next:</Text> Ao chegar no local, o jogador irá usar o botão para seguir para as próximas
+              dicas e direção;
             </Text>
           </View>
         </View>
